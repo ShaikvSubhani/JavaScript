@@ -52,3 +52,19 @@ var removeDuplicates = function(nums) {
 
     return i+1;
 };
+
+//to calculate the frequency of numbers
+
+let arr2=[4,2,3,4,3,3,8];
+
+let freq={};
+
+for(let i=0;i<arr2.length;i++)
+{
+    if(freq[arr2[i]]===undefined)
+    freq[arr2[i]]=1;
+    else
+    freq[arr2[i]]=freq[arr2[i]] +1;
+}
+
+console.log(freq);
